@@ -1,0 +1,304 @@
+{
+  "M": 1733894,
+  "settings": {
+    "jackknife_blocks": 200,
+    "maf_min": 0.01,
+    "af_tol": 0.15
+  },
+  "pairs": {
+    "BACK_PAIN_UKB__KNEE_PAIN_UKB": {
+      "n_snps": 1472964,
+      "filter_trace": {
+        "n_merged": 1507012,
+        "after_ldsc_maf": 1473213,
+        "after_af_check": 1472964,
+        "after_chi2_cap": 1472964
+      },
+      "mean_n": {
+        "BACK_PAIN_UKB": 461857.0,
+        "KNEE_PAIN_UKB": 461857.0
+      },
+      "trait1": {
+        "intercept": 1.019032563913407,
+        "intercept_se": 0.01282299704093471,
+        "intercept_p": 0.0,
+        "hsq": 0.05828435607219355,
+        "hsq_se": 0.0036254180085569083
+      },
+      "trait2": {
+        "intercept": 0.9984041376486722,
+        "intercept_se": 0.013922888553073658,
+        "intercept_p": 0.0,
+        "hsq": 0.06164551872374178,
+        "hsq_se": 0.004116117071162621
+      },
+      "cross": {
+        "intercept": 0.18850029018535988,
+        "intercept_se": 0.00754781476287327,
+        "intercept_p": 1.1673515884513526e-137,
+        "gencov": 0.03801821538194238,
+        "gencov_se": 0.0023063463993869826,
+        "rg": 0.6342565628386527
+      },
+      "ols_cross_intercept": 0.18838384799120828,
+      "n_shared_times_rho": 87060.17852413976,
+      "n_shared_if_rho1": 87060.17852413976,
+      "mean_chi2": {
+        "BACK_PAIN_UKB": 1.3321801165362719,
+        "KNEE_PAIN_UKB": 1.3296103929703544
+      }
+    },
+    "KNEE_PAIN_UKB__KNEE_PAIN_FIGSHARE": {
+      "n_snps": 30040,
+      "filter_trace": {
+        "n_merged": 30541,
+        "after_ldsc_maf": 30043,
+        "after_af_check": 30040,
+        "after_chi2_cap": 30040
+      },
+      "mean_n": {
+        "KNEE_PAIN_UKB": 461857.0,
+        "KNEE_PAIN_FIGSHARE": 429737.0
+      },
+      "trait1": {
+        "intercept": 0.9978730248834659,
+        "intercept_se": 0.030053407235650913,
+        "intercept_p": 9.639564516049809e-242,
+        "hsq": 0.06482726680757016,
+        "hsq_se": 0.008884651792874414
+      },
+      "trait2": {
+        "intercept": 1.0419958547694053,
+        "intercept_se": 0.033006561191931155,
+        "intercept_p": 9.728520548465529e-219,
+        "hsq": 0.04490460490570524,
+        "hsq_se": 0.009556342211867751
+      },
+      "cross": {
+        "intercept": 0.9037066185355306,
+        "intercept_se": 0.029808873663992406,
+        "intercept_p": 6.906941975729595e-202,
+        "gencov": 0.04949702952550543,
+        "gencov_se": 0.008893143329046407,
+        "rg": 0.9173917720860416
+      },
+      "ols_cross_intercept": 0.9064735415209004,
+      "n_shared_times_rho": 402608.18696330016,
+      "n_shared_if_rho1": 402608.18696330016,
+      "mean_chi2": {
+        "KNEE_PAIN_UKB": 1.293233729446629,
+        "KNEE_PAIN_FIGSHARE": 1.2323582237216633
+      }
+    },
+    "TMFI__BACK_PAIN_UKB": {
+      "n_snps": 1417580,
+      "filter_trace": {
+        "n_merged": 1454411,
+        "after_ldsc_maf": 1417780,
+        "after_af_check": 1417676,
+        "after_chi2_cap": 1417580
+      },
+      "mean_n": {
+        "TMFI": 46115.833900732236,
+        "BACK_PAIN_UKB": 461857.0
+      },
+      "trait1": {
+        "intercept": 0.9834212202066558,
+        "intercept_se": 0.027675342051387324,
+        "intercept_p": 1.4573501168768021e-276,
+        "hsq": 0.49766386432826104,
+        "hsq_se": 0.07391392471129954
+      },
+      "trait2": {
+        "intercept": 1.0182034734094325,
+        "intercept_se": 0.012918344804133428,
+        "intercept_p": 0.0,
+        "hsq": 0.058463976338947066,
+        "hsq_se": 0.00363688907684293
+      },
+      "cross": {
+        "intercept": 0.014357641076099466,
+        "intercept_se": 0.006682203027813995,
+        "intercept_p": 0.03166303896584219,
+        "gencov": 0.03300345467033706,
+        "gencov_se": 0.006220408603025418,
+        "rg": 0.1934849429551542
+      },
+      "ols_cross_intercept": 0.014479044554509752,
+      "n_shared_times_rho": 2095.3756394765333,
+      "n_shared_if_rho1": 2095.3756394765333,
+      "mean_chi2": {
+        "TMFI": 1.2545620591240947,
+        "BACK_PAIN_UKB": 1.3372591210987677
+      }
+    },
+    "TMFI__KNEE_PAIN_UKB": {
+      "n_snps": 1417069,
+      "filter_trace": {
+        "n_merged": 1450491,
+        "after_ldsc_maf": 1417269,
+        "after_af_check": 1417165,
+        "after_chi2_cap": 1417069
+      },
+      "mean_n": {
+        "TMFI": 46115.769827016185,
+        "KNEE_PAIN_UKB": 461857.0
+      },
+      "trait1": {
+        "intercept": 0.9834795671964885,
+        "intercept_se": 0.027688339770999583,
+        "intercept_p": 2.4468014465889577e-276,
+        "hsq": 0.49762529668112543,
+        "hsq_se": 0.07392709676481042
+      },
+      "trait2": {
+        "intercept": 0.9980752763951212,
+        "intercept_se": 0.013692814650445534,
+        "intercept_p": 0.0,
+        "hsq": 0.06173050912415267,
+        "hsq_se": 0.0038862315099837184
+      },
+      "cross": {
+        "intercept": 0.016935490850193923,
+        "intercept_se": 0.010042235508505819,
+        "intercept_p": 0.09171370443360735,
+        "gencov": 0.06006461238282071,
+        "gencov_se": 0.009018669260194822,
+        "rg": 0.34270269884759064
+      },
+      "ols_cross_intercept": 0.01754751475565129,
+      "n_shared_times_rho": 2471.589178860268,
+      "n_shared_if_rho1": 2471.589178860268,
+      "mean_chi2": {
+        "TMFI": 1.254640911276463,
+        "KNEE_PAIN_UKB": 1.3350091873571948
+      }
+    },
+    "TMFI__KNEE_PAIN_FIGSHARE": {
+      "n_snps": 28672,
+      "filter_trace": {
+        "n_merged": 29162,
+        "after_ldsc_maf": 28675,
+        "after_af_check": 28674,
+        "after_chi2_cap": 28672
+      },
+      "mean_n": {
+        "TMFI": 46099.49107142857,
+        "KNEE_PAIN_FIGSHARE": 429737.0
+      },
+      "trait1": {
+        "intercept": 1.0047398472323579,
+        "intercept_se": 0.03941190708193354,
+        "intercept_p": 2.338657271300478e-143,
+        "hsq": 0.4072794860209505,
+        "hsq_se": 0.09874731973466219
+      },
+      "trait2": {
+        "intercept": 1.0427065823933608,
+        "intercept_se": 0.033040295169124476,
+        "intercept_p": 1.365089876595251e-218,
+        "hsq": 0.044843176244410754,
+        "hsq_se": 0.009563501593371373
+      },
+      "cross": {
+        "intercept": 0.008973443895934243,
+        "intercept_se": 0.01876338853525093,
+        "intercept_p": 0.6324778420048414,
+        "gencov": 0.029460865386070675,
+        "gencov_se": 0.015124617247396941,
+        "rg": 0.2179972668551099
+      },
+      "ols_cross_intercept": 0.009150342299551797,
+      "n_shared_times_rho": 1263.0152405752808,
+      "n_shared_if_rho1": 1263.0152405752808,
+      "mean_chi2": {
+        "TMFI": 1.193512583382984,
+        "KNEE_PAIN_FIGSHARE": 1.236538252097121
+      }
+    },
+    "BMI__BACK_PAIN_UKB": {
+      "n_snps": 1048774,
+      "filter_trace": {
+        "n_merged": 1058417,
+        "after_ldsc_maf": 1050348,
+        "after_af_check": 1048795,
+        "after_chi2_cap": 1048774
+      },
+      "mean_n": {
+        "BMI": 228627.02096142733,
+        "BACK_PAIN_UKB": 461857.0
+      },
+      "trait1": {
+        "intercept": 0.6219310373326797,
+        "intercept_se": 0.02092722576670405,
+        "intercept_p": 4.3959887284210885e-194,
+        "hsq": 0.19822632300102472,
+        "hsq_se": 0.012430566073475638
+      },
+      "trait2": {
+        "intercept": 1.0156438448482394,
+        "intercept_se": 0.01574613783849271,
+        "intercept_p": 0.0,
+        "hsq": 0.05838015653603724,
+        "hsq_se": 0.0037295597589889406
+      },
+      "cross": {
+        "intercept": 0.0006975095647279379,
+        "intercept_se": 0.00847031358910213,
+        "intercept_p": 0.9343703440184099,
+        "gencov": 0.02577595777335965,
+        "gencov_se": 0.0032930318643272366,
+        "rg": 0.2396081144058426
+      },
+      "ols_cross_intercept": 0.0013042456377021238,
+      "n_shared_times_rho": 226.65625629206772,
+      "n_shared_if_rho1": 226.65625629206772,
+      "mean_chi2": {
+        "BMI": 1.2337808172588982,
+        "BACK_PAIN_UKB": 1.373603554838807
+      }
+    },
+    "BMI__KNEE_PAIN_UKB": {
+      "n_snps": 1048625,
+      "filter_trace": {
+        "n_merged": 1057706,
+        "after_ldsc_maf": 1050199,
+        "after_af_check": 1048646,
+        "after_chi2_cap": 1048625
+      },
+      "mean_n": {
+        "BMI": 228636.2258048397,
+        "KNEE_PAIN_UKB": 461857.0
+      },
+      "trait1": {
+        "intercept": 0.621969435212456,
+        "intercept_se": 0.020920133936439184,
+        "intercept_p": 3.084138130119646e-194,
+        "hsq": 0.19822033408070763,
+        "hsq_se": 0.012407472497682832
+      },
+      "trait2": {
+        "intercept": 0.9932906516482525,
+        "intercept_se": 0.018926723676880513,
+        "intercept_p": 0.0,
+        "hsq": 0.06188294423061142,
+        "hsq_se": 0.004779380357512788
+      },
+      "cross": {
+        "intercept": -0.009303581526451504,
+        "intercept_se": 0.00933559373244156,
+        "intercept_p": 0.31897281185933835,
+        "gencov": 0.04799526648216982,
+        "gencov_se": 0.003674410191259611,
+        "rg": 0.4333500204433381
+      },
+      "ols_cross_intercept": -0.008661888953994666,
+      "n_shared_times_rho": -3023.2666546939345,
+      "n_shared_if_rho1": -3023.2666546939345,
+      "mean_chi2": {
+        "BMI": 1.2338382498655387,
+        "KNEE_PAIN_UKB": 1.372742677252665
+      }
+    }
+  }
+}
