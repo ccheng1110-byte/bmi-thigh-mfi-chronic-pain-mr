@@ -1,0 +1,19 @@
+Data and text licence — Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Cheng Chen
+
+All non-code content in this repository — frozen intermediate outputs (CSV/TSV/JSON),
+tables, figures and documentation — is licensed under CC BY 4.0.
+
+You are free to share and adapt this material for any purpose, including commercially,
+provided that you give appropriate credit to the author, cite the associated article,
+and indicate whether changes were made.
+
+Human-readable summary : https://creativecommons.org/licenses/by/4.0/
+Full legal code        : https://creativecommons.org/licenses/by/4.0/legalcode
+
+Scope note: the source GWAS summary statistics from which these derivatives were
+computed (TMFI; chronic pain intensity; GIANT BMI; OpenGWAS/figshare site-matched
+pain; FinnGen R12) are NOT included in this repository and remain governed by the
+terms of their respective providers. This licence covers only the authors' own code
+and derived outputs.
