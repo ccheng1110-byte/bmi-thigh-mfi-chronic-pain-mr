@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/32437795/README.md)
 # Code and data archive — TMFI / BMI / chronic pain intensity Mendelian randomization study
 
 **Associated manuscript:** *Body mass index, but not thigh muscle fat infiltration, is associated with chronic pain intensity*
