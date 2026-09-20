@@ -1,0 +1,11 @@
+{
+  "bmi_rows": 2554623,
+  "bmi_gws_strong_rsid": 1860,
+  "tmfi_gws_strong_rsid": 3838,
+  "candidate_union_ids": 5616,
+  "cross_exposure_allele_compatible": 3163,
+  "candidate_tmfi_gws": 1417,
+  "candidate_bmi_gws": 1828,
+  "candidate_gws_both": 82,
+  "candidate_in_ld_panel": 1521
+}
