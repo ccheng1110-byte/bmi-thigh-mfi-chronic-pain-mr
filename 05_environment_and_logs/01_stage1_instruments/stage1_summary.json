@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "p_threshold": 5e-08,
+    "f_threshold": 10.0,
+    "provisional_distance_bp": 10000000
+  },
+  "tmfi": {
+    "gws_rows_raw": 4005,
+    "unique_variant_keys": 4005,
+    "duplicate_variant_key_excess_rows": 0,
+    "ambiguous_snp_id_rows": 0,
+    "rsid_rows": 3838,
+    "f_gt_10_rows_raw": 4005,
+    "exact_clean_strong_rsid_rows": 3838,
+    "distance10mb_provisional_rows": 43,
+    "f_min_distance_set": 29.81624530001502,
+    "f_median_distance_set": 39.7209800178811,
+    "f_max_distance_set": 353.6063350153712,
+    "palindromic_rows_distance_set": 6,
+    "palindromic_intermediate_rows_distance_set": 1
+  },
+  "cpi_full": {
+    "matched_rows": 43,
+    "candidate_rows": 43,
+    "harmonised": 42,
+    "status_counts": {
+      "aligned": 30,
+      "swapped": 12,
+      "drop_palindromic_intermediate": 1
+    }
+  },
+  "cpi_no_imaging": {
+    "matched_rows": 43,
+    "candidate_rows": 43,
+    "harmonised": 42,
+    "status_counts": {
+      "aligned": 30,
+      "swapped": 12,
+      "drop_palindromic_intermediate": 1
+    }
+  },
+  "important_note": "10 Mb physical distance pruning is a provisional feasibility screen, not LD clumping. Publication-grade instruments require EUR LD clumping."
+}

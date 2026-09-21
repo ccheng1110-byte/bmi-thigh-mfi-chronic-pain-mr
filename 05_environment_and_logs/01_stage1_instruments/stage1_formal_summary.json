@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "p_threshold": 5e-08,
+    "clump_r2": 0.001,
+    "clump_kb": 10000,
+    "reference": "1000G_EUR_GRCh37_503"
+  },
+  "panel_overlap": {
+    "eligible_strong_rsid": 3838,
+    "present_in_panel": 873,
+    "missing_from_panel": 2965,
+    "overlap_fraction": 0.22746221990620114
+  },
+  "instruments": {
+    "ld_clumped": 42,
+    "f_min": 29.85646294356585,
+    "f_median": 39.79317432038196,
+    "f_max": 351.43846557588125,
+    "palindromic": 3
+  },
+  "cpi_full": {
+    "candidate_rows": 42,
+    "matched_rows": 42,
+    "harmonised": 42,
+    "status_counts": {
+      "aligned": 28,
+      "swapped": 14
+    }
+  },
+  "cpi_no_imaging": {
+    "candidate_rows": 42,
+    "matched_rows": 42,
+    "harmonised": 42,
+    "status_counts": {
+      "aligned": 28,
+      "swapped": 14
+    }
+  }
+}

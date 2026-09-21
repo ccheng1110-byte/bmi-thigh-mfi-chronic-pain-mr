@@ -1,0 +1,148 @@
+{
+  "ld_clumped_union": 93,
+  "exposure_harmonised": 93,
+  "exposure_status": {
+    "aligned": 51,
+    "swapped": 42
+  },
+  "cpi_full_usable": 93,
+  "cpi_no_imaging_usable": 93,
+  "methods": [
+    {
+      "outcome": "CPI_full",
+      "exposure": "TMFI",
+      "method": "MVMR_IVW_fixed",
+      "nsnp": 93,
+      "beta": -0.007972740253613822,
+      "se": 0.017741370446537508,
+      "p": 0.6531525477085773,
+      "ci_low": -0.04274582632882734,
+      "ci_high": 0.026800345821599694
+    },
+    {
+      "outcome": "CPI_full",
+      "exposure": "TMFI",
+      "method": "MVMR_IVW_multiplicative_random_effects",
+      "nsnp": 93,
+      "beta": -0.007972740253613822,
+      "se": 0.02440786525671444,
+      "p": 0.7439353777255403,
+      "ci_low": -0.05581215615677412,
+      "ci_high": 0.039866675649546476
+    },
+    {
+      "outcome": "CPI_full",
+      "exposure": "BMI",
+      "method": "MVMR_IVW_fixed",
+      "nsnp": 93,
+      "beta": 0.2663614214293465,
+      "se": 0.05629631079402015,
+      "p": 2.229560370593141e-06,
+      "ci_low": 0.156020652273067,
+      "ci_high": 0.376702190585626
+    },
+    {
+      "outcome": "CPI_full",
+      "exposure": "BMI",
+      "method": "MVMR_IVW_multiplicative_random_effects",
+      "nsnp": 93,
+      "beta": 0.2663614214293465,
+      "se": 0.07745020445017162,
+      "p": 0.0005835841410769381,
+      "ci_low": 0.11455902070701013,
+      "ci_high": 0.41816382215168285
+    },
+    {
+      "outcome": "CPI_no_imaging",
+      "exposure": "TMFI",
+      "method": "MVMR_IVW_fixed",
+      "nsnp": 93,
+      "beta": -0.016729610805635405,
+      "se": 0.020249391520025688,
+      "p": 0.4087028735217435,
+      "ci_low": -0.05641841818488575,
+      "ci_high": 0.02295919657361494
+    },
+    {
+      "outcome": "CPI_no_imaging",
+      "exposure": "TMFI",
+      "method": "MVMR_IVW_multiplicative_random_effects",
+      "nsnp": 93,
+      "beta": -0.016729610805635405,
+      "se": 0.027329446002135396,
+      "p": 0.5404411712792244,
+      "ci_low": -0.07029532496982077,
+      "ci_high": 0.03683610335854997
+    },
+    {
+      "outcome": "CPI_no_imaging",
+      "exposure": "BMI",
+      "method": "MVMR_IVW_fixed",
+      "nsnp": 93,
+      "beta": 0.2942270742117453,
+      "se": 0.06420964986017041,
+      "p": 4.599170389469902e-06,
+      "ci_low": 0.1683761604858113,
+      "ci_high": 0.42007798793767936
+    },
+    {
+      "outcome": "CPI_no_imaging",
+      "exposure": "BMI",
+      "method": "MVMR_IVW_multiplicative_random_effects",
+      "nsnp": 93,
+      "beta": 0.2942270742117453,
+      "se": 0.08666009331362476,
+      "p": 0.0006858216879128754,
+      "ci_low": 0.12437329131704081,
+      "ci_high": 0.46408085710644986
+    }
+  ],
+  "diagnostics": [
+    {
+      "outcome": "CPI_full",
+      "nsnp": 93,
+      "q_ivw_outcome_only": 172.23708158956364,
+      "q_ivw_df": 91,
+      "phi": 1.8927151823028971,
+      "q_validity_modified": 171.15692421518202,
+      "q_validity_df": 90,
+      "q_validity_p": 5.453381952934716e-07,
+      "egger_intercept": -0.0012938905674662288,
+      "egger_intercept_se_mre": 0.0018471196331320326,
+      "egger_tmfi_beta": -0.007685475640214676,
+      "egger_tmfi_se_mre": 0.024479891957465576,
+      "egger_bmi_beta": 0.27582701599903836,
+      "egger_bmi_se_mre": 0.07883458474522984,
+      "egger_q": 171.30312258237268,
+      "egger_df": 90,
+      "tmfi_conditional_f": 22.132084679151323,
+      "bmi_conditional_f": 35.395887108165034,
+      "tmfi_strength_q": 2058.283875161073,
+      "bmi_strength_q": 3291.817501059348
+    },
+    {
+      "outcome": "CPI_no_imaging",
+      "nsnp": 93,
+      "q_ivw_outcome_only": 165.75975403339493,
+      "q_ivw_df": 91,
+      "phi": 1.8215357586087355,
+      "q_validity_modified": 164.75208315782507,
+      "q_validity_df": 90,
+      "q_validity_p": 2.6019736593171584e-06,
+      "egger_intercept": 0.0003620025708964979,
+      "egger_intercept_se_mre": 0.002073025033301936,
+      "egger_tmfi_beta": -0.01681036718469232,
+      "egger_tmfi_se_mre": 0.027480094000564798,
+      "egger_bmi_beta": 0.2915782250557823,
+      "egger_bmi_se_mre": 0.08843605192221547,
+      "egger_q": 165.70360999121533,
+      "egger_df": 90,
+      "tmfi_conditional_f": 22.132084679151323,
+      "bmi_conditional_f": 35.395887108165034,
+      "tmfi_strength_q": 2058.283875161073,
+      "bmi_strength_q": 3291.817501059348
+    }
+  ],
+  "conditional_f_note": "Calculated to match MVMR::strength_mvmr: unweighted no-intercept exposure regression, first-order variance, Q divided by L, with zero covariance between exposure estimates.",
+  "pleiotropy_q_note": "Calculated to match MVMR::pleiotropy_mvmr first-order modified Q with gencov=0 and df=L-K-1."
+}

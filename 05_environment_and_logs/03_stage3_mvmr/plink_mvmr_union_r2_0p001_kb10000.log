@@ -1,0 +1,31 @@
+PLINK v1.9.0-rc2 64-bit (13 Sep 2026)
+Options in effect:
+  --bfile D:\SX\TMFI_CPI_MR\reference\1000G_EUR
+  --clump D:\SX\TMFI_CPI_MR\03_stage3_mvmr\mvmr_clump_input.tsv
+  --clump-field P
+  --clump-kb 10000
+  --clump-p1 5e-8
+  --clump-p2 5e-8
+  --clump-r2 0.001
+  --clump-snp-field SNP
+  --out D:\SX\TMFI_CPI_MR\03_stage3_mvmr\plink_mvmr_union_r2_0p001_kb10000
+
+Hostname: LAPTOP-DIEVJLMT
+Working directory: D:\SX
+Start time: Fri Sep 18 17:26:19 2026
+
+Random number seed: 1789723579
+28476 MB RAM detected; reserving 14238 MB for main workspace.
+1836406 variants loaded from .bim file.
+503 people (240 males, 263 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 503 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is exactly 1.
+1836406 variants and 503 people pass filters and QC.
+Note: No phenotypes present.
+--clump: 93 clumps formed from 1521 top variants.
+Results written to
+D:\SX\TMFI_CPI_MR\03_stage3_mvmr\plink_mvmr_union_r2_0p001_kb10000.clumped .
+
+End time: Fri Sep 18 17:26:20 2026
