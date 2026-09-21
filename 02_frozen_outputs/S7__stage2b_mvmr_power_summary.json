@@ -1,0 +1,84 @@
+{
+  "parameters": {
+    "alpha_two_sided": 0.05,
+    "estimator": "Stage 3 MVMR IVW multiplicative random effects",
+    "estimand": "direct effect conditional on the other exposure",
+    "power_method": "exact two-sided normal approximation using observed MVMR-MRE SE",
+    "scaling_method": "sd_exposure / sd_outcome; sd from SE, N and EAF for TMFI and CPI; sd_BMI = 1.00 because the GIANT coefficients are already per SD of BMI"
+  },
+  "exposure_sd": {
+    "TMFI_stage2_value": 2.030884204160846,
+    "BMI_joint_set": 1.0,
+    "BMI_joint_set_implied_not_used": 1.2307496342161395
+  },
+  "results": {
+    "CPI_full|TMFI": {
+      "implied_outcome_sd": 2.8865034026794105,
+      "implied_exposure_sd": 2.030884204160846,
+      "mvmr_beta_raw": -0.00313152881944499,
+      "mvmr_se_raw": 0.0244108152976977,
+      "mvmr_beta_standardized_sd_y_per_sd_exposure": -0.0022032790290085237,
+      "mvmr_se_standardized": 0.017174945698232493,
+      "ci95_standardized": [
+        -0.03586555429949907,
+        0.03145899624148203
+      ],
+      "mde_80_raw": 0.06838889592158504,
+      "mde_90_raw": 0.07912802400504315,
+      "mde_80_standardized": 0.048117015326648124,
+      "mde_90_standardized": 0.055672844143932754,
+      "power_at_observed_effect": 0.05188730400915742
+    },
+    "CPI_full|BMI": {
+      "implied_outcome_sd": 2.8865034026794105,
+      "implied_exposure_sd": 1.0,
+      "mvmr_beta_raw": 0.260973218152723,
+      "mvmr_se_raw": 0.0774595654194694,
+      "mvmr_beta_standardized_sd_y_per_sd_exposure": 0.09041154010436066,
+      "mvmr_se_standardized": 0.026835085435051694,
+      "ci95_standardized": [
+        0.037815738714734995,
+        0.1430073414939863
+      ],
+      "mde_80_raw": 0.2170093089067337,
+      "mde_90_raw": 0.2510863433762518,
+      "mde_80_standardized": 0.07518068702267727,
+      "mde_90_standardized": 0.08698633202482275,
+      "power_at_observed_effect": 0.9206105781256271
+    },
+    "CPI_no_imaging|TMFI": {
+      "implied_outcome_sd": 2.9314108779941446,
+      "implied_exposure_sd": 2.030884204160846,
+      "mvmr_beta_raw": -0.0121369367917577,
+      "mvmr_se_raw": 0.0272436710252068,
+      "mvmr_beta_standardized_sd_y_per_sd_exposure": -0.008408481186419533,
+      "mvmr_se_standardized": 0.018874440824312697,
+      "ci95_standardized": [
+        -0.04540170572220275,
+        0.02858474334936368
+      ],
+      "mde_80_raw": 0.07632537297680894,
+      "mde_90_raw": 0.08831076834502041,
+      "mde_80_standardized": 0.052878289945267776,
+      "mde_90_standardized": 0.0611817830914005,
+      "power_at_observed_effect": 0.07302961486436965
+    },
+    "CPI_no_imaging|BMI": {
+      "implied_outcome_sd": 2.9314108779941446,
+      "implied_exposure_sd": 1.0,
+      "mvmr_beta_raw": 0.297181431053857,
+      "mvmr_se_raw": 0.0863881058205733,
+      "mvmr_beta_standardized_sd_y_per_sd_exposure": 0.10137829305498355,
+      "mvmr_se_standardized": 0.02946980461493186,
+      "ci95_standardized": [
+        0.04361853692268324,
+        0.15913804918728386
+      ],
+      "mde_80_raw": 0.24202334521712077,
+      "mde_90_raw": 0.2800283410347725,
+      "mde_80_standardized": 0.08256206833165891,
+      "mde_90_standardized": 0.09552681377316355,
+      "power_at_observed_effect": 0.9305780161093473
+    }
+  }
+}
