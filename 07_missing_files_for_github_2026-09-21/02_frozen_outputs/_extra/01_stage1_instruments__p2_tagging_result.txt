@@ -1,4 +1,0 @@
-missing_candidates	2965
-tagged_by_instrument	845
-untagged	2120
-untagged_loci_500kb	40
