@@ -110,7 +110,7 @@ BODY = NL.join([
 
 "### The pattern was stable under influence-point, reweighting and targeted-exclusion analyses",
 
-"Leave-one-out estimates preserved the pattern across all 93 variants (Supplementary Figure S1); no single variant was required for the exposure ranking. Across Huber-IRLS reweighting (BMI 0.241 and 0.270 SD per SD), Cook 4/n exclusion (0.246 and 0.293), exclusion of rs731839 and rs13107325 (0.252 and 0.294) and of all five review targets (0.246 and 0.283), the BMI estimate remained positive with intervals excluding zero and TMFI remained null, with point estimates between \u22120.032 and \u22120.001 (Supplementary Table S15; Supplementary Figure S2). For CPI_full the Cook-threshold set and the review-target set were the same five variants, so those two analyses are the same fitted model and are not independent replications; the convergence of a statistical influence criterion and an annotation-based criterion on the same variants is itself informative.",
+"Leave-one-out estimates preserved the pattern across all 93 variants, and no single variant determined the exposure contrast (Supplementary Figure S1). Across Huber-IRLS reweighting, Cook-distance exclusions and targeted exclusions, BMI remained positive with confidence intervals excluding zero, whereas TMFI estimates ranged from \u22120.032 to \u22120.001 in the source units (Supplementary Table S15; Supplementary Figure S2). For CPI_full, the Cook-threshold and five-target analyses used the same excluded set and therefore represent the same fitted model.",
 
 "### Sample overlap was real but left both findings unchanged",
 

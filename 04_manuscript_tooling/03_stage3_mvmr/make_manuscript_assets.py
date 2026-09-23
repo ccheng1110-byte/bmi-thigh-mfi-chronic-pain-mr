@@ -158,20 +158,19 @@ def forest_panel(ax, data, title):
     ax.set_yticks(y)
     ax.set_yticklabels([f"{outcome_label(r.outcome)} · {r.exposure}" for r in data.itertuples(index=False)])
     ax.set_title(title, loc="left", fontsize=8, fontweight="bold")
-    ax.set_xlabel("MVMR direct effect (SD of pain intensity per 1 SD of exposure)")
+    ax.set_xlabel("MVMR direct effect (SD of pain intensity per 1 SD of exposure)", fontsize=8)
     ax.grid(axis="x", color="#D9D9D9", linewidth=0.5, alpha=0.7)
     ax.set_axisbelow(True)
 
 
 def make_forest(primary, ext):
-    fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.8), sharex=False)
+    fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.8), sharex=True)
     forest_panel(axes[0], primary, "Primary MVMR-IVW (MRE)")
     sens = ext.loc[ext["analysis"] == "Sensitivity: exclude rs731839 + rs13107325"]
     forest_panel(axes[1], sens, "Sensitivity: metabolic pleiotropy targets")
     for ax in axes:
-        ax.tick_params(axis="y", labelsize=6.8)
-        ax.tick_params(axis="x", labelsize=7)
-    fig.suptitle("BMI, rather than TMFI, carries the direct signal", fontsize=9, fontweight="bold", y=1.02)
+        ax.tick_params(axis="y", labelsize=8)
+        ax.tick_params(axis="x", labelsize=8)
     fig.tight_layout()
     save_pub(fig, "Figure2_primary_and_sensitivity_forest")
 
@@ -308,18 +307,18 @@ def make_design_flowchart():
     txt(560, 66, "N = 134,627; 106,697", 9, False, "#4A4A4A")
 
     # Row B - instrument construction
-    box(120, 104, 440, 40, "#F6F6F3", "#A8A89E")
-    txt(340, 117, "Instrument construction", 11.5, True)
-    txt(340, 131, "P < 5\u00d710\u207b\u2078; LD clumped r\u00b2 < 0.001 / 10 Mb; strand aligned on allele frequency",
+    box(100, 98, 480, 58, "#F6F6F3", "#A8A89E")
+    txt(340, 111, "Instrument construction", 11.5, True)
+    txt(340, 136, "$P < 5\\times10^{-8}$; LD clumped r\u00b2 < 0.001 / 10 Mb; strand aligned on allele frequency",
         9, False, "#4A4A4A")
 
     # Row C - instrument sets
-    box(115, 166, 210, 34, "#FFFFFF", "#8FA8BF", 1.1)
-    box(355, 166, 210, 34, "#FFFFFF", "#8FA8BF", 1.1)
+    box(115, 162, 210, 46, "#FFFFFF", "#8FA8BF", 1.1)
+    box(355, 162, 210, 46, "#FFFFFF", "#8FA8BF", 1.1)
     txt(220, 176, "42 instruments", 11, True, "#3465A4")
-    txt(220, 190, "TMFI (univariable)", 9, False, "#4A4A4A")
+    txt(220, 195, "TMFI (univariable)", 9, False, "#4A4A4A")
     txt(460, 176, "93 instruments", 11, True, "#D55E00")
-    txt(460, 190, "TMFI + BMI (joint)", 9, False, "#4A4A4A")
+    txt(460, 195, "TMFI + BMI (joint)", 9, False, "#4A4A4A")
 
     # Row D - analysis stages
     box(25, 222, 300, 62, "#F2F6FA", "#3465A4", 1.2)
@@ -333,11 +332,12 @@ def make_design_flowchart():
 
     # Row E - site-matched secondary analysis
     box(25, 306, 630, 62, "#F1F6F1", "#5F8A5F", 1.2)
-    txt(340, 323, "Pre-specified site-matched secondary analysis", 11.5, True)
-    txt(340, 337, "Knee pain (98,704 cases) \u00b7 back pain (118,471 cases) \u00b7 knee-pain replication (N = 429,737)",
-        9, False, "#4A4A4A")
-    txt(340, 351, "Identical frozen 42 / 93 instrument sets; BMI as internal positive control",
-        9, False, "#4A4A4A")
+    txt(340, 320, "Pre-specified site-matched secondary analysis", 11.5, True)
+    txt(340, 335, "Knee pain (98,704 cases) \u00b7 back pain (118,471 cases)", 9, False, "#4A4A4A")
+    txt(340, 348, "Second knee GWAS (N = 429,737): same-cohort Stage 1 concordance check",
+        8.5, False, "#4A4A4A")
+    txt(340, 360, "Frozen 42 / 93 instrument sets; BMI as internal comparator",
+        8.5, False, "#4A4A4A")
 
     # Row F - validity audits
     for x in (25, 245, 465):
@@ -350,17 +350,17 @@ def make_design_flowchart():
     txt(560, 426, "Independent base-R re-run", 9, False, "#4A4A4A")
 
     # Row G - primary result
-    box(25, 468, 630, 52, "#FBFBFB", "#4A4A4A", 1.2)
-    txt(340, 480, "Primary result (CPI_full, Stage 2, per SD of exposure)", 10.5, True)
-    txt(340, 494, "BMI: +0.111 SD (95% CI 0.047\u20130.176; P = 7.5\u00d710\u207b\u2074)", 9.5, True, "#D55E00")
-    txt(340, 508, "TMFI: \u22120.002 SD (95% CI \u22120.036\u20130.031; P = 0.90)", 9.5, True, "#3465A4")
+    box(25, 464, 630, 64, "#FBFBFB", "#4A4A4A", 1.2)
+    txt(340, 477, "Primary result (CPI_full, Stage 2, per SD of exposure)", 10.5, True)
+    txt(340, 497, "BMI: +0.090 SD (95% CI 0.038\u20130.143; $P = 7.5\\times10^{-4}$)", 9.5, True, "#D55E00")
+    txt(340, 516, "TMFI: \u22120.002 SD (95% CI \u22120.036\u20130.031; P = 0.90)", 9.5, True, "#3465A4")
 
-    for a in [(120, 80, 120, 104), (340, 80, 340, 104), (560, 80, 560, 104),
-              (340, 144, 220, 166), (340, 144, 460, 166),
-              (220, 200, 175, 222), (460, 200, 505, 222),
+    for a in [(120, 80, 120, 98), (340, 80, 340, 98), (560, 80, 560, 98),
+              (340, 156, 220, 162), (340, 156, 460, 162),
+              (220, 208, 175, 222), (460, 208, 505, 222),
               (175, 284, 175, 306), (505, 284, 505, 306),
               (120, 368, 120, 390), (340, 368, 340, 390), (560, 368, 560, 390),
-              (120, 446, 120, 468), (340, 446, 340, 468), (560, 446, 560, 468)]:
+              (120, 446, 120, 464), (340, 446, 340, 464), (560, 446, 560, 464)]:
         arrow(*a)
 
     fig.tight_layout()
